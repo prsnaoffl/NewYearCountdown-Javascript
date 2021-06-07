@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-image: url("http://images.unsplash.com/photo-1551892589-865f69869476?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+     background-repeat:no-repeat ;
+     background-size: cover;
+     background-position: center center;
+     height: 140vh;
+     color:black;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-items: center;
+     margin: 0;
+     overflow: hidden;
+    
+
+}
+
+body::after {
+   content: "";
+   position:absolute;
+   background-color:rgba(0,0,0,0.5) ;
+   height: 100%;
+   width:100%;
+}
+
+body*{
+    z-index: 1;
+}
+
+h1{
+    font-size:60px;
+    margin:-80 0 40;
+}
+
+#year{
+    opacity:0.5;
+    font-size: 200px;
+    z-index: -1;    
+    position:absolute;
+
+}
+
+
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin:10px;
+}
+
+.Countdown{
+    transform: scale(2);
+    display: none;
+}
